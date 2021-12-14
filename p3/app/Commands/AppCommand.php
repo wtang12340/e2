@@ -4,8 +4,17 @@ namespace App\Commands;
 
 class AppCommand extends Command
 {
-    public function test()
+
+    public function migrate()
     {
-        dump('It works! You invoked your first command.');
+        $this->app->db()->createTable('products', [
+            'name' => 'varchar(255)',
+            'sku' => 'varchar(255)',
+            'description' => 'text',
+            'price' => 'decimal(10,2)',
+            'available' => 'int',
+            'weight' => 'decimal(10,2)',
+            'perishable' => 'tinyint(1)'
+        ]);
     }
 }
