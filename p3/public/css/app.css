@@ -1,3 +1,31 @@
 #logo {
     width:300px;
 }
+table, th, td {
+    border:1px solid black;
+  }
+
+table {
+  border-collapse: collapse;
+}
+
+ul.error.alert.alert-danger{
+  color: red;
+}
+
+h2{
+  color:green;
+}
+
+h3{
+  color: blue;
+}
+
+.round th, .round td {
+  padding: 15px;
+}
+
+.history th, .history td {
+  padding-left: 15px;
+  padding-right: 15px;
+}

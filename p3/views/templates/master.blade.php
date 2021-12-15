@@ -9,7 +9,7 @@
 
     <link rel='shortcut icon' href='/favicon.ico'>
 
-    <link href='/css/app.css' rel='stylesheet'>
+    <link href='css/app.css' rel='stylesheet'>
 
     @yield('head')
 
